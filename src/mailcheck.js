@@ -7,7 +7,6 @@
  *
  * v 1.1.0
  */
-
 var Mailcheck = {
   domainThreshold: 2,
   secondLevelThreshold: 2,
@@ -257,4 +256,8 @@ if (typeof window !== 'undefined' && window.jQuery) {
       Mailcheck.run(opts);
     }
   })(jQuery);
+}
+
+if (typeof window !== 'undefined') {
+  window.Mailcheck = Mailcheck;
 }
